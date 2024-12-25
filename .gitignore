@@ -1,0 +1,60 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.tmp
+*.bak
+*.swp
+*.ncb
+*.sdf
+*.suo
+*.sln
+*.user
+*.opendb
+*.VC.db
+*.VC.db.*
+*.VC.vsscc
+
+# Testing
+/coverage/
+/test/reports/
+
+# Temporary files
+*.log
+*.pid
+*.session
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Minified files
+*.min.js
+*.min.css
+
+# Distribution
+/dist/
+
+# IDE - Specific files
+# Visual Studio Code
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+.swp
+.swo
+.swn
+.sw00

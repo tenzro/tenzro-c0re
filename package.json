@@ -1,0 +1,64 @@
+{
+  "name": "tenzro-c0re",
+  "version": "0.1.0",
+  "description": "Tenzro c0re - Decentralized AI/ML Dataset and Model Management System",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "test": "jest",
+    "test:unit": "jest --config jest.unit.config.js",
+    "test:integration": "jest --config jest.integration.config.js",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepare": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "tenzro",
+    "decentralized",
+    "ai",
+    "ml",
+    "dataset",
+    "model",
+    "management"
+  ],
+  "author": "Tenzro",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@chainsafe/libp2p-noise": "^11.0.0",
+    "@libp2p/bootstrap": "^6.0.0",
+    "@libp2p/tcp": "^6.0.0",
+    "@libp2p/websockets": "^5.0.0",
+    "debug": "^4.3.4",
+    "fastify": "^4.0.0",
+    "libp2p": "^0.45.0",
+    "merkle-tools": "^1.4.1",
+    "pino": "^8.0.0",
+    "protobufjs": "^7.2.4",
+    "typescript": "^5.0.0",
+    "uint8arrays": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.8",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.0",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.0.0",
+    "ts-node-dev": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
